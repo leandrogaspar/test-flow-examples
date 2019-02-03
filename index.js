@@ -1,4 +1,4 @@
 exports.test = [
-    'sfafas',
-    'fsasffafs'
+    'hello',
+    'world'
 ];
