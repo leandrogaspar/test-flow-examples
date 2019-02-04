@@ -1,16 +1,18 @@
 {
-    "startNode": {
-        "name": "createWs",
-        "config": {
-            "url": "ws://localhost:3001",
-            "connectTimeout": 10000,
-            "clientName": "client"
-        },
-        "nextNodes": {
-            "default": "sendWsRequest"
-        }
-    },
+    "name": "Ws flow",
+    "startNode": "createWs",
     "nodes": {
+        "createWs": {
+            "name": "createWs",
+            "config": {
+                "url": "ws://localhost:3001",
+                "connectTimeout": 10000,
+                "clientName": "client"
+            },
+            "nextNodes": {
+                "default": "sendWsRequest"
+            }
+        },
         "sendWsRequest": {
             "name": "sendWsRequest",
             "config": {

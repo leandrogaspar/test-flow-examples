@@ -1,15 +1,17 @@
 {
-    "startNode": {
-        "name": "createDriver",
-        "config": {
-            "browser": "chrome",
-            "driverName": "browser1"
-        },
-        "nextNodes": {
-            "default": "open"
-        }
-    },
+    "name": "Selenium flow",
+    "startNode": "createDriver",
     "nodes": {
+        "createDriver": {
+            "name": "createDriver",
+            "config": {
+                "browser": "chrome",
+                "driverName": "browser1"
+            },
+            "nextNodes": {
+                "default": "open"
+            }
+        },
         "open": {
             "name": "open",
             "config": {

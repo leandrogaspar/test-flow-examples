@@ -1,8 +1,11 @@
 {
-    "startNode": {
-        "name": "requestExample",
-        "config": {},
-        "nextNodes": {}
-    },
-    "nodes": {}
+    "name": "Rest flow",
+    "startNode": "requestExample",
+    "nodes": {
+        "requestExample": {
+            "name": "requestExample",
+            "config": {},
+            "nextNodes": {}
+        }
+    }
 }
