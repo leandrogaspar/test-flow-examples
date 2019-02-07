@@ -1,6 +1,6 @@
 {
     "name": "Rest flow",
-    "startNode": "requestExample",
+    "startNode": "delay",
     "nodes": {
         "delay": {
             "name": "delay",
