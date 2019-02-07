@@ -2,6 +2,13 @@
     "name": "Rest flow",
     "startNode": "requestExample",
     "nodes": {
+        "delay": {
+            "name": "delay",
+            "config": {
+                "ms": 5000
+            },
+            "nextNodes": "requestExample"
+        },
         "requestExample": {
             "name": "requestExample",
             "config": {},
